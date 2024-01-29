@@ -162,3 +162,5 @@ dataset_check.py
 epoch-results.csv
 ckpt/
 tensorboard/
+run/train/.hydra/hydra.yaml
+run/train/.hydra/config.yaml

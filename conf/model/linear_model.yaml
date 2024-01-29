@@ -1,5 +1,6 @@
 # @package _global_
-name: LinearModel
+#name: LinearModel
+name: Conv3
 arch:
   #_target_: srcs.model.model.LinearModel
   _target_: srcs.model.model.Conv3
