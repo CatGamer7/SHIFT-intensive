@@ -7,8 +7,8 @@ df = df.sample(frac=1, ignore_index=True, random_state=4294967295) #.reset_index
 
 total = df.shape[0]
 
-train_index = 0.8 * total
-validation_index = 0.9 * total
+train_index = int(0.8 * total)
+validation_index = int(0.9 * total)
 
 train = df.iloc[:train_index,:]
 validation = df.iloc[train_index:validation_index,:]
