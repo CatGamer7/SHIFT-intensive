@@ -2,11 +2,11 @@
 status: train
 
 trainer:
-  epochs: 2
+  epochs: 20
   logging_step: 100
 
   monitor: min loss/valid
-  save_topk: 7
+  save_topk: 20
   early_stop: 10
 
   tensorboard: true

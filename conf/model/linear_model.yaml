@@ -5,7 +5,7 @@ arch:
   #_target_: srcs.model.model.LinearModel
   _target_: srcs.model.model.Conv3
   num_classes: 25
-  dropout_rate: 0.5
+  dropout_rate: 0.2
 loss:
   _target_: srcs.model.loss.nll_loss
 optimizer:
