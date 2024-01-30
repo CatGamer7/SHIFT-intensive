@@ -1,12 +1,16 @@
 import pandas as pd
 import torch
 from torch.utils.data import DataLoader, Dataset
+from torchvision.transforms import v2
 
 
 class SignDataset(Dataset):
     def __init__(self, csv_file, transform=None):
         self.data = pd.read_csv(csv_file)
-        self.transform = transform # если есть аугментации
+        self.transform = v2.Compose([
+            v2.RandomResizedCrop(size=(28, 28), antialias=True),
+            v2.RandomHorizontalFlip(p=0.5)
+        ])
 
     def __len__(self):
         return len(self.data)
