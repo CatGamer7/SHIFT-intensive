@@ -1,0 +1,14 @@
+# @package _global_
+name: CNN_Small
+arch:
+  _target_: srcs.model.model.CNN_Small
+  num_classes: 25
+loss:
+  _target_: srcs.model.loss.cross_entropy
+optimizer:
+  _target_: torch.optim.Adamax
+  lr: ${learning_rate}
+  weight_decay: ${weight_decay}
+lr_scheduler:
+  _target_: torch.optim.lr_scheduler.CosineAnnealingLR
+  T_max: 12
