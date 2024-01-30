@@ -27,3 +27,17 @@ python3 train.py
 ## Полезные ссылки
 - Туториалы по обучению на Pytorch - https://pytorch.org/tutorials/
 - Документация hydra - https://hydra.cc/docs/intro/
+
+## ResCNN
+
+<https://colab.research.google.com/drive/1gpqFVVORn1dEaHb-3zRJZQZS2S99lWmR>
+<https://drive.google.com/drive/folders/1FjNzAuw990n2b2pKZd9uxyYx6KRmHtD_?usp=sharing>
+
+| Epoch | F1 Train | F1 Valid |
+|-------|----------|----------|
+| 1     | 0.5389   | 0.9381   |
+| 2     | 0.9271   | 0.9782   |
+| 3     | 0.9609   | 0.9955   |
+| 4     | 0.9940   | 0.9983   |
+| 5     | 1.0      | 0.9989   |
+| 6     | 1.0      | 1.0      |
