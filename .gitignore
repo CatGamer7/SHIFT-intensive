@@ -165,3 +165,4 @@ tensorboard/
 run/train/.hydra/hydra.yaml
 run/train/.hydra/config.yaml
 config.yaml
+data/archive
